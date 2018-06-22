@@ -1,0 +1,13 @@
+<div class="control">
+  <div class="select is-info">
+    <select
+      [(ngModel)]="selectedColor"
+      (ngModelChange)="setColor()"
+    >
+      <option
+        *ngFor="let color of colorOptions"
+        [ngValue]="color.value"
+      >{{color.name}}</option>
+    </select>
+  </div>
+</div>

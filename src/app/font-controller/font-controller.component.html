@@ -1,0 +1,11 @@
+<div class="control fx-container">
+  <label class="radio" *ngFor="let option of fontOptions; let idx = index">
+    <input
+      type="radio"
+      name="answer"
+      [checked]="idx === 0"
+      (change)="setOption(option.code)"
+    >
+    {{option.description}}
+  </label>
+</div>

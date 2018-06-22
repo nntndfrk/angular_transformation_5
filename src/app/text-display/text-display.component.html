@@ -1,0 +1,19 @@
+<section class="section">
+  <div class="card">
+    <div class="card-content">
+      <p
+        [ngClass]="{
+          'is-3': code === 0,
+          'is-2': code === 1,
+          'is-1': code === 2,
+          'has-text-danger': color === 'red',
+          'has-text-info': color === 'blue',
+          'has-text-primary': color === 'green'
+        }"
+        class="title"
+      >
+        «Текст дочернего компонента»
+      </p>
+    </div>
+  </div>
+</section>
